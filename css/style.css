@@ -74,10 +74,7 @@ header .icons a i{
 
 /* -----------------------start navbar---------------------- */
 
-.container{
-    width: 80% !important;
-    /* padding: 20px; */
-}
+
 
 nav .container .navbar-collapse .navbar-nav .nav-item .nav-link{
 
@@ -747,7 +744,7 @@ nav .container .navbar-brand{
 
 .contact .container{
     padding: 50px 0;
-    width: 60% !important;
+    width: 60%;
 }
 .contact .container h1{
     font-weight: 900;

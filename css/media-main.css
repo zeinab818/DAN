@@ -5,6 +5,11 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.contact .container{
+    
+    width: 80% !important;
+
+}
 #navbarNavDropdown{
     width: 100%;
     background-color: #F7F7F7;
@@ -55,6 +60,7 @@ nav .container .navbar-collapse .navbar-nav .nav-item .nav-link::after{
 .about .container{
     width: 90% !important;
 }
+
 
 
 }
