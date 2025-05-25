@@ -1,0 +1,852 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-font:"Montserrat";
+    --sec-font:"Poppins";
+    --main-bg-color: rgb(247,247,247);
+    --main-color:#1C1C1C;
+    --sec-color: rgb(116, 129, 130);
+}
+.main-font{
+    font-family: var(--main-font);
+}
+.sec-font{
+    font-family: var(--sec-font);
+}
+.main-bg-color{
+    background-color: var(--main-bg-color);
+}
+.main-color{
+    color: var(--main-color);
+}
+.sec-color{
+    color: var(--sec-color);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* -----------------------start header---------------------- */
+header{
+    background-image: linear-gradient( to bottom ,rgba(0,0,0,0.7)) , url(../images/bg.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  
+}
+
+header .header-content p{
+    font-size: 50px;
+    line-height: 35px;
+}
+header .header-content h1{
+    font-weight: 200;
+    font-size: 60px;
+}
+header .header-content h1 span{
+    font-weight: 400;
+}
+header .icons{
+    margin-top: 20px;
+}
+header .icons a{
+    color: white;
+    font-size: 10px;
+    padding-left: 5px;
+}
+header .icons a i{
+    background-color: rgba(0, 0, 0,0.3);
+    border-radius: 50%;
+    padding: 15px 15px;
+
+}
+/* -----------------------end header---------------------- */
+
+
+/* -----------------------start navbar---------------------- */
+
+.container{
+    width: 80% !important;
+    /* padding: 20px; */
+}
+
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link{
+
+        color:white ;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-left: 0px !important;
+        position: relative;
+        
+}
+.navbar{
+    background-color: transparent ;
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+
+    height: 1.5px;
+    width: 0;
+    bottom: 0;
+    left: 20%;
+    /* transform: translate(-50%); */
+    transition: all 0.8s;
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after{
+
+    width: 60%;
+    
+}
+
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link.active::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1.5px;
+    width: 60%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav.scrolled .container .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
+    background-color: var(--main-color); 
+}
+nav.scrolled .container .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+    background-color: var(--main-color); 
+}
+
+nav .container .navbar-brand{
+    color:white ;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+.icon-bar i:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+
+/* -----------------------end navbar---------------------- */
+
+/* -----------------------start about---------------------- */
+.about .container{
+    width: 80% !important;
+}
+.about .container .row .col-lg-5 .image{
+    position: relative;
+    margin-right: 0;
+}
+.about .container .row .col-lg-5 .image::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    bottom: -7%;
+    left: -7%;
+    z-index: -1;
+}
+.about .container .row .col-lg-7{
+    max-width: 700px;
+   
+}
+.about .container .row .col-lg-5{
+    max-width: 500px;
+
+}
+.about .container .row .col-lg-7 .content .caption h3{
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 0;
+}
+
+.about .container .row .col-lg-7 .content .caption span{
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+    letter-spacing: 2px;
+    
+}
+.about .container .row .col-lg-7 .content .caption p{
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 15px 0;
+}
+.about .container .row .col-lg-7 .content .caption p span{ 
+    font-weight: 700;
+
+}
+.progress{
+    border-radius: 5px;
+    margin-top: 35px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+
+}
+.progress .progress-bar{
+    text-align: left;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.progress .progress-bar span{
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+}
+.about .container .row .col-lg-7 .buttons{
+    margin: 40px 0;
+    
+}
+.about .container .row .col-lg-7 .buttons a{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 30px ;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+}
+.about .container .row .col-lg-7 .buttons a.active{
+    background-color: inherit;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    /* margin-left: 5px; */
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+
+}
+.about .container .row .col-lg-7 .buttons a:hover{
+    background-color: inherit;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    
+}
+.about .container .row .col-lg-7 .buttons a.active:hover{
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid white;
+
+
+}
+/* -----------------------end about---------------------- */
+
+
+
+
+/* -----------------------start services ---------------------- */
+.services .container{
+    padding: 100px 0;
+    width: 75% !important;
+}
+.services .container h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    
+}
+.services .container .row{
+    margin-top: 100px;
+}
+.services .container .row .col-lg-4 .caption h2{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+}
+.services .container .row .col-lg-4 .caption p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.max-width-300{
+    max-width: 280px;
+}
+.services .container .row .col-lg-4 .icon i{
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    padding: 20px;
+    transition: all 0.5s;
+
+}
+.services .container .row .col-lg-4 .icon {
+    padding-bottom: 20px;
+}
+.services .container .row .col-lg-4 .inner:hover i{
+    background-color: var(--main-color);
+    color: white;
+}
+.services .container .row .col-lg-4 .inner{
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.services .container .heading-1 h1{
+    position: relative;
+}
+.services .container .heading-1{
+    position: relative;    
+    z-index: 0;  
+}
+.services .container .heading-1 h1::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height:30px;
+    left: 50%;
+    transform: translate(-50%); 
+    bottom: -10px; 
+    z-index: -1;
+}
+
+
+
+/* -----------------------end services---------------------- */
+
+
+/* -----------------------strt portifolo---------------------- */
+.works .container{
+    padding: 100px 0;
+    width: 75% !important;
+}
+.works .container h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    
+}
+.works .container .row{
+    margin-top: 20px;
+}
+
+.works .container .heading-1 h1{
+    position: relative;
+}
+.works .container .heading-1 h1::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height:30px;
+    left: 50%;
+    transform: translate(-50%); 
+    bottom: -10px; 
+    z-index: -1;
+}
+
+.works .container .row .inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.works .container .row .inner .layer {
+    position: absolute;
+    top: 700px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: opacity 0.7s ease , top 0.19s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works .container .row .inner .layer .caption h3 {
+    transform: translateY(-600px);
+    opacity: 0;
+    transition: transform 0.25s;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    
+}
+
+.works .container .row .inner .layer .caption .icons {
+    transform: translateY(600px);
+    opacity: 0;
+    transition: transform 0.25s;
+}
+
+.works .container .row .inner:hover .layer {
+    opacity: 1;
+    top: 7px;
+}
+
+.works .container .row .inner:hover .layer .caption h3,
+.works .container .row .inner:hover .layer .caption .icons {
+    transform: translateY(0);
+    opacity: 1;
+}
+.works .container .row .inner .layer .caption .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.works .container .row .inner .layer .caption .icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 80%;
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    color: white;
+    margin: 3px;
+}
+.works .container .row .inner .layer .caption .icons i:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.works .container .row .inner{
+    margin-bottom: 30px;
+}
+.works .container .nav{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.works .container .nav .nav-item .nav-link{
+    color:var(--main-color) ;
+    font-family: var(--sec-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: capitalize;
+    background-color: inherit !important;
+    position: relative;
+    margin-bottom: 0;
+    transition: all 0.5s;
+
+    
+}
+.works .container .nav .nav-item .nav-link.active{
+    position: relative;
+}
+.works .container .nav .nav-item .nav-link.active::after,
+.works .container .nav .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 20%;
+    /* transform: translate(-50%); */
+    transition: all 0.5s;
+
+}
+
+.works .container .nav .nav-item .nav-link:focus:after{
+    width: 60%;
+}
+
+.works .container .row .inner {
+    animation-name: ani;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-delay: 0;
+}
+
+/* @keyframes ani {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+} */
+
+
+
+/* -----------------------end portifolo---------------------- */
+
+
+/* -----------------------start clients---------------------- */
+
+.clients .container{
+    padding: 100px 0;
+}
+.clients .container h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    
+}
+.clients .container .heading-1{
+    position: relative;    
+    z-index: 0;  
+}
+.clients .container .heading-1 h1{
+    position: relative;
+}
+.clients .container .heading-1 h1::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 300px;
+    height:30px;
+    left: 50%;
+    transform: translate(-50%); 
+    bottom: -10px; 
+    z-index: -1;
+}
+
+.clients .slide{
+    width: 80%; 
+    margin: auto;
+}
+.clients .slide img{
+    width: 100px;
+    height: 100px;
+}
+.clients .slide p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.clients .slide h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.clients .slide span{
+    color:rgb(136, 136, 136);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--sec-color);
+    
+}
+/* -----------------------end clients------------------------ */
+
+
+
+/* -----------------------start cal----------------------- */
+
+
+.cal .container{
+    width: 80%;
+    margin: auto;
+    
+}
+.cal .container .item{
+    margin-bottom: 10px;
+}
+.cal .container .item h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cal .container .item h2,
+.cal .container .item .icon i{
+    color: rgb(52, 52, 52);
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 30px;
+
+}
+.cal .container p {
+    color: var(--sec-color);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+
+}
+/* -----------------------end cal------------------------- */
+
+/* -----------------------start teams------------------------- */
+.teams .container{
+    padding: 50px 0;
+    width: 75% !important;
+}
+.teams .container h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    
+}
+
+.teams .container .heading-1 h1{
+    position: relative;
+}
+.teams .container .heading-1{
+    position: relative;
+    z-index: 0;
+}
+.teams .container .heading-1 h1::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 350px;
+    height:30px;
+    left: 50%;
+    transform: translate(-50%); 
+    bottom: -10px; 
+    z-index: -1;
+}
+.teams .container .row .inner article p{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+}
+.teams .container .row .inner article{
+    background-color: rgb(91,91,91);
+    padding: 20px 10px;
+}
+.teams .container .row .inner article h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.teams .container .row .inner{
+    overflow: hidden;
+
+}
+.teams .container .row .inner .image img{
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.teams .container .row .inner .image{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.teams .container .row .inner{
+    margin-bottom: 30px;
+}
+
+.teams .container .row .inner .image .layer {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teams .container .row .inner:hover .layer,
+.teams .container .row .inner .image:hover .layer{
+    opacity: 1;
+    transform: rotateY(360deg);
+    animation: fade 0.4s ease-in-out 0.1s forwards;
+
+}
+.teams .container .row .inner .image:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.teams .container .row .inner .layer  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.teams .container .row .inner .layer  .icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 80%;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+    color: white;
+    margin: 10px;
+
+}
+.teams .container .row .inner .layer  .icons i:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+@keyframes fade {
+    0% {
+        scale: 0;
+    }
+    50% {
+        scale: 0.5;
+    }
+    75% {
+        scale: 0.7;
+    }
+    100% {
+        scale: 1;
+    }
+}
+/* -----------------------end teams---------------------------- */
+
+/* -----------------------start contact------------------------- */
+
+.contact .container{
+    padding: 50px 0;
+    width: 60% !important;
+}
+.contact .container h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    
+}
+
+.contact .container .heading-1 h1{
+    position: relative;
+}
+.contact .container .heading-1 h1::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 250px;
+    height:30px;
+    left: 50%;
+    transform: translate(-50%); 
+    bottom: -8px; 
+    z-index: -1;
+}
+
+.contact .container .row .inner article h5{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+  
+}
+.contact .container .row .inner article p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  
+}
+
+.contact .container .row .inner .icon i{
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 15px;
+    transition: all 0.5s;
+    color: var(--main-color);
+    margin: 7px;
+}
+.contact .container .row .inner:hover i {
+    background-color: var(--main-color);
+    color: white;
+}
+.contact .container textarea,
+.contact .container input{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;
+    font-family: var(--sec-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.contact .container textarea:focus,
+.contact .container input:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.contact .container form button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+
+
+}
+.contact .container form button:hover{
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: white;
+}
+/* ---------------------end contact------------------------- */
+
+
+/* ---------------------start footer------------------------- */
+footer{
+    background-color: rgb(28, 28, 28);
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+footer p{
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+}
+/* ---------------------end footer------------------------- */

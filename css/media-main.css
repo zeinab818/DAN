@@ -1,0 +1,60 @@
+@media screen and (max-width:989px) {
+    nav .container{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navbarNavDropdown{
+    width: 100%;
+    background-color: #F7F7F7;
+    color: var(--main-color);
+}
+nav .container .navbar-collapse .navbar-nav{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+nav .container .navbar-collapse .navbar-nav .nav-item{
+    padding-bottom: 2px;
+
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link{
+
+    color:var(--main-color) !important ;
+    /* margin-bottom: 2px; */
+    position: relative;
+    line-height: 0 !important;
+    font-size: 13px !important;
+
+    
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link::after{
+    background-color: var(--main-color);
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link.active::after{
+    background-color: var(--main-color);
+    
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after{
+
+    width: 5%;
+    
+}
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link.active::after{
+
+    width: 10%;
+}
+
+nav .container .navbar-collapse .navbar-nav .nav-item .nav-link::after{
+
+    width: 0;
+    left: 48%;
+    /* transform: translate(-50%); */
+
+}
+.about .container{
+    width: 90% !important;
+}
+
+
+}
