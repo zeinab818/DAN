@@ -690,12 +690,12 @@ nav .container .navbar-brand{
 .teams .container .row .inner:hover .layer,
 .teams .container .row .inner .image:hover .layer{
     opacity: 1;
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
     animation: fade 0.4s ease-in-out 0.1s forwards;
 
 }
 .teams .container .row .inner .image:hover img{
-    transform: scale(1.1);
+    transform: scale(1.2,1.2);
     overflow: hidden;
 }
 .teams .container .row .inner .layer  .icons{
@@ -708,14 +708,16 @@ nav .container .navbar-brand{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateY(180deg);
+
     background-color: var(--main-color);
     border-radius: 80%;
     font-size: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: all 0.5s;
     color: white;
-    margin: 10px;
+    margin: 5px;
 
 }
 .teams .container .row .inner .layer  .icons i:hover {
